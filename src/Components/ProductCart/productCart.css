@@ -1,0 +1,69 @@
+
+.dog-cart-container {
+    width: 250px;
+    margin: 0 20px 50px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 2px #cac8c8;
+    overflow: hidden;
+    background-color: #fff;
+}
+.dog-cart-container .dog-img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    /* border-bottom: 1px solid #999; */
+}
+.dog-cart-container:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.dog-cart-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0;
+    object-fit: cover;
+
+}
+.dog-cart-container .dog-title {
+    text-decoration: none;
+    color:black;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.dog-cart-container .dog-price-breed {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.dog-cart-container .dog-price-breed .dog-price,.dog-breed {
+    text-decoration: none;
+    font-size: 16px;
+    color:#071a58
+}
+.dog-cart-container .dog-price-breed .dog-price:hover,.dog-breed:hover {
+    color:rgb(223, 84, 84);
+}
+.dog-cart-container .add-buy {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.add-cart {
+    margin-bottom: 20px;
+}
+.add-cart:hover {
+    color: rgb(223, 84, 84);
+}
+.buy-now {
+    width: 100px;
+    margin-bottom: 20px;
+    background-color: rgb(247, 191, 117);
+    padding: 8px;
+    border-radius: 5px;
+}
+.buy-now:hover {
+    background-color: rgb(223, 84, 84);
+}

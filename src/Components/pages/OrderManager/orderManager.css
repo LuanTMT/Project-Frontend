@@ -1,0 +1,57 @@
+
+.list-order {
+    list-style-type: none;
+    display: flex;
+    justify-content: start;
+    font-size: 18px;
+    border-bottom: 2px solid #111;
+}
+.list-order li {
+    text-align: center;
+}
+.list-order-title li {
+    width: 25%;
+    text-align: center;
+}
+.list-order li button {
+    width: 50%;
+    margin-bottom: 10px;
+}
+.list-order .order-id {
+    width: 100px;
+}
+.list-order .order-username {
+    width: 350px;
+}
+.list-order .order-time {
+    width: 300px;
+}
+.list-order .order-action {
+    width: 150px;
+}
+.list-order .order-email {
+    width: 300px;
+}
+.detail-container {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #999;
+    margin: 10px 0;
+    align-items: center;
+}
+.detail-image {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.detail-image img {
+    width: 100%;
+}
+.search-by-date {
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid rgb(46, 72, 222);
+    border-radius: 10px;
+    background-color: rgb(147, 167, 167);
+}

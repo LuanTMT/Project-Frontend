@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  white-space: nowrap;
+  transform: translateX(0);
+}
+
+.carousel-item {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transition: ease 1s;
+}
+.carousel-item img {
+  height: 500px;
+  display: block;
+  overflow: hidden;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carousel-indicator-item {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background: #867979;
+  opacity: 0.5;
+  margin: 0.2em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.active {
+  opacity: 1;
+}

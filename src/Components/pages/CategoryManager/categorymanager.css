@@ -1,0 +1,43 @@
+.cate-manager-container {
+    min-height: 70vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.cate-manager-container h2 {
+    margin: 50px 0;
+}
+.cate-item {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: 20px auto;
+    border-bottom: 1px solid #999;
+}
+.cate-title {
+    display: flex;
+}
+.cate-title strong {
+    margin-right: 30px;
+}
+.edit-cate, .delete-cate {
+    margin-right: 20px;
+    cursor: pointer;
+} 
+.delete-cate:hover {
+    color: red;
+}
+.cate-acction {
+    display: flex;
+    align-items: center;
+}
+.cate-acction .edit-cate-btn {
+    width: 70px;
+}
+.form-add-category .edit-cate-btn {
+    margin-bottom: 20px;
+}
+.cate-manager-container .addCate-btn {
+    width: 50%;
+    margin: 0 auto;
+}

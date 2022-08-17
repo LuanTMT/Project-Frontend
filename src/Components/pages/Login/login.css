@@ -1,0 +1,13 @@
+.forgot-pass-container {
+    background-color: antiquewhite;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #999;
+}
+/* .form-container .form-group label {
+    display: block;
+} */
+.forgot-pass-container button {
+    margin-bottom: 20px;
+    cursor: pointer;
+}

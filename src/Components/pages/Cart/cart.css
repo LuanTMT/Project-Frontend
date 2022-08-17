@@ -1,0 +1,81 @@
+.product-cart-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+.product-cart {
+    width: 70%;
+    margin-right: 40px;
+}
+.product-cart-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+}
+.cart-procduct-image {
+    width: 200px;
+    height: 180px;
+    overflow: hidden;
+}
+.cart-procduct-image img {
+    width: 100%;
+    box-shadow: 2px 2px 2px #999;
+}
+.product-cart-title span {
+    font-size: 20px;
+    font-weight: 600;
+}
+.product-cart-quantity input{
+    width: 50px;
+    text-align: center;
+}
+.product-cart-quantity .quantity-change {
+    display: flex;
+    align-items: center;
+}
+.product-cart-total p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.product-cart-delete {
+    cursor: pointer;
+    margin-right: 20px;
+}
+.product-cart-delete:hover {
+    color: red;
+}
+.product-up-down {
+    background-color: #fff;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    padding: 3px 10px 5px 10px;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px;
+}
+.product-up-down:hover {
+    background-color: #fff;
+}
+.product-cart-action-container {
+    border: 2px solid #999;
+    padding: 30px;
+}
+.total-bill {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cart-empty {
+    margin-right: 50px;
+    text-align: center;
+}
+.cart-empty .cart-icon {
+    font-size: 100px;
+    margin-bottom: 30px;
+}

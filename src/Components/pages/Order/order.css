@@ -1,0 +1,15 @@
+.order-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #999;
+}
+.order-item .detail-btn {
+    width: 200px;
+}
+.order-item .order-id {
+    margin: 30px 50px 30px 20px;
+}
+.order-item .order-time {
+    margin-right: 50px;
+}

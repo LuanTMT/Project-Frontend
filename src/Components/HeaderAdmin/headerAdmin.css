@@ -1,0 +1,40 @@
+.header-admin-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color: #f2f2f2;
+}
+.logo-admin img {
+    width: 200px;
+}
+.admin-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.admin-account:hover .manager-account-admin {
+    display: block;
+}
+.admin-account img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.manager-account-admin {
+    background-color: aliceblue;
+    padding: 10px;
+    position: absolute;
+    /* width: 150px; */
+    border-radius: 5px;
+    top: 100%;
+    display: none;
+}
+.manager-account-admin .my-account {
+    font-size: 18px;
+}
+.manager-account-admin .logout {
+    font-style: italic
+}

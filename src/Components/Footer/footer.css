@@ -1,0 +1,34 @@
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2ff;
+}
+.footer-left {
+    width: 250px;
+}
+.footer-title {
+    margin: 20px;
+}
+.footer-left .footer-img img{
+    width: 100%;
+}
+.footer-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+a {
+    text-decoration: none;
+    color: #111;
+    font-size: 22px;
+}
+a:hover {
+    color: red;
+}
+.footer-contact {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-contact a li {
+    font-size: 35px;
+}

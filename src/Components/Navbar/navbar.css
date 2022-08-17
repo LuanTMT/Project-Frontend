@@ -1,0 +1,12 @@
+.list-category-customer {
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 0px;
+}
+.list-category-customer li {
+    margin: 0 20px;
+}
+.list-category-customer li:hover {
+    color: red;
+}
