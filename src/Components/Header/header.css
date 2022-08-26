@@ -25,6 +25,10 @@
 .list-item a:hover {
     color: red;
 }
+/* category css */
+.list-category-customer {
+    padding-top: 20px;
+}
 .search-header {
     display: flex;
     align-items: center;

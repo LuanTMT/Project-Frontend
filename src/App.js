@@ -26,6 +26,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import Checkout from "./Components/pages/Checkout/Checkout";
 import OrderManager from "./Components/pages/OrderManager/OrderManager";
 import Order from "./Components/pages/Order/Order";
+// Payment method components.
+import Card from './Components/pages/checkoutCard/Card';
+
+import './App.css';
+
 const App = () => {
     const [user, setUser] = useState({});
     const [idCategory, setIdCategory] = useState(0);
@@ -64,6 +69,7 @@ const App = () => {
                     <Route path='/product-detail/:id' element={<ProductDetail setIsAddCart={setIsAddCart} isAddCart={isAddCart}/>}></Route>
                     <Route path='/order-manager' element={<OrderManager/>}></Route>
                     <Route path='/order' element={<Order />}></Route>
+                    <Route path="/card" element={<Card />} />  
                 </Routes>
                 <Footer />
             </Router>

@@ -16,7 +16,7 @@ const Checkout = ({setIsAddCart, isAddCart}) => {
     const [formValues, setFormValues] = useState(initialValues)
     const [formErrors, setFormErrors] = useState({})
     const [isSubmit, setIsSubmit] = useState(false);
-    const [method, setMethod] = useState('CASH');
+    let [method, setMethod] = useState('CASH');
     const [open, setOpen] = useState(false);
     const idUser = localStorage.getItem('idUser');
     const checkout = JSON.parse(localStorage.getItem('checkout'));
@@ -41,6 +41,9 @@ const Checkout = ({setIsAddCart, isAddCart}) => {
     const handleCheckout = () => {
         setFormErrors(validate(formValues));
         setIsSubmit(true);
+        if( method === 'VISA' ){
+            return navigate("/card")
+        }
     };
     
 
@@ -79,8 +82,10 @@ const Checkout = ({setIsAddCart, isAddCart}) => {
             })
             .catch(err => console.log(err))
         }
+      
     }, [formErrors])
 
+  
     const validate = (values) => {
         const errors = {};
         if (!values.fullName) {
@@ -99,7 +104,7 @@ const Checkout = ({setIsAddCart, isAddCart}) => {
         return navigate('/cart');
     }
 
-
+    
     return ( 
         <div className='checkout-container'>
             <Form className='form-checkout'>
@@ -143,15 +148,15 @@ const Checkout = ({setIsAddCart, isAddCart}) => {
                 <div className='select-method'>
                     <div className='form-radio-group'>
                         <input type="radio" id="cash" name="method" value="CASH" onChange={(e) => setMethod(e.target.value)}/>
-                        <label htmlFor="CASH">CASH</label>
+                        <label htmlFor="cash">CASH</label>
                     </div>
                     <div className='form-radio-group'>
                         <input type="radio" id="visa" name="method" value="VISA" onChange={(e) => setMethod(e.target.value)}/>
-                        <label htmlFor="VISA">VISA</label>
+                        <label htmlFor="visa">VISA</label>
                     </div>
                     <div className='form-radio-group'>
                         <input type="radio" id="vnpay" name="method" value="VNPAY" onChange={(e) => setMethod(e.target.value)}/>
-                        <label htmlFor="VNPAY">VNPAY</label>
+                        <label htmlFor="vnpay">VNPAY</label>
                     </div>
                 </div>
             </div>

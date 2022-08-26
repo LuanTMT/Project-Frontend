@@ -114,8 +114,8 @@ const Header = (props) => {
                 </div>
             ) : (<>
                 <div className='header-account'>
-                    <Link to="/login" className='account-item'>LOGIN</Link>
-                    <Link to="/register" className='account-item'>REGISTER</Link>
+                    <Link to="/login" className='account-item'>Login</Link>
+                    <Link to="/register" className='account-item'>Register</Link>
                 </div>
             </>)}
             
