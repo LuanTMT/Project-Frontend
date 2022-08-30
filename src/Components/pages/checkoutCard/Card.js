@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { useNavigate } from 'react-router-dom';
 const idUser = localStorage.getItem('idUser');
 
-const CardForm = () => {
+const CardForm = ({setIsAddCart, isAddCart}) => {
   const stripe = useStripe();
   const elements = useElements();
   const [messages, addMessage] = useMessages();
@@ -78,10 +78,10 @@ const CardForm = () => {
     toast.success('Checkout successfully!',{
       position: toast.POSITION.TOP_CENTER
     });
-    // setIsAddCart(!isAddCart)
-
+    
     localStorage.removeItem('checkout');
     navigate('/')
+    setIsAddCart(!isAddCart)
   };
 
   return (

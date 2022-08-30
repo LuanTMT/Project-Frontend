@@ -1,13 +1,21 @@
 .forgot-pass-container {
     background-color: antiquewhite;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px #999;
 }
-/* .form-container .form-group label {
-    display: block;
-} */
+
 .forgot-pass-container button {
     margin-bottom: 20px;
     cursor: pointer;
+}
+
+.google {
+    background-color: #df4930;
+}
+
+.google .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
